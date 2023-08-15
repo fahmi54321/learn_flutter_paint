@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_paint/grid_painter.dart';
+import 'package:learn_flutter_paint/oval_painter.dart';
 import 'package:learn_flutter_paint/polygon_painter.dart';
 
 class HomePage extends StatelessWidget {
@@ -34,6 +35,17 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Polygon painter'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const OvalPainterWidget(),
+                  ),
+                );
+              },
+              child: const Text('Oval painter'),
             ),
           ],
         ),
