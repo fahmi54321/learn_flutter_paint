@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_paint/arc_curve_painter.dart';
+import 'package:learn_flutter_paint/baterai_painter.dart';
 import 'package:learn_flutter_paint/grid_painter.dart';
 import 'package:learn_flutter_paint/oval_painter.dart';
 import 'package:learn_flutter_paint/polygon_painter.dart';
@@ -58,6 +59,17 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: const Text('Arc curve painter'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const BateraiWidget(),
+                  ),
+                );
+              },
+              child: const Text('Baterai painter'),
             ),
           ],
         ),
